@@ -1,5 +1,10 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  section.row(ng-controller='DemoController')
+    .col-md-12.col-sm-12
+      .container
+        .row
+          ng-item-viewer(data="collection")
+    
+          
